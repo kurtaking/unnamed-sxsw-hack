@@ -1,0 +1,194 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TuneFork Website</title>
+
+  <!-- Material Design Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap core CSS -->
+  <link href= {% static 'css/bootstrap.min.css' %} rel="stylesheet">
+
+  <!-- Material Design Bootstrap -->
+  <link href= {% static 'css/mdb.css' %} rel="stylesheet">
+
+  <!-- Template style -->
+  <link href={% static 'css/style.css' %} rel="stylesheet">
+</head>
+
+<body>
+    {% block index %}{% endblock %}
+    <!--Navigation-->
+    <nav class="navbar navbar-fixed-top z-depth-1" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#sec-home" class="waves-effect waves-light">Home <i class="fa fa-home left"></i></a></li>
+                    <li><a href="#sec-best-features" class="waves-effect waves-light">About</a></li>
+                    <li><a href="#sec-details" class="waves-effect waves-light">Details</a></li>
+                    <li><a href="#sec-testimonials" class="waves-effect waves-light">Testimonials</a></li>
+                    <li><a href="#sec-pricing" class="waves-effect waves-light">Pricing</a></li>
+                    <li><a href="#sec-contact" class="waves-effect waves-light">Contact</a></li>
+                    <li><a href="#sec-footer" class="waves-effect waves-light">Social</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--/.Navigation-->
+
+    <!-- Intro image -->
+    <section class="full-bg-img" id="sec-home">
+        <!--Mask-->
+        <div class="view rgba-black-strong">
+
+            <!--Alignment-->
+            <div class="verticalcenter">
+                <div class="container">
+                    <div class="row">
+
+                        <!--Content-->
+                        <div class="col-md-6 white-text wow fadeInLeft">
+                            <h2>TuneFork</h2>
+                            <p>TuneFork main information goes here.</p>
+                            <a href="#sec-best-features" class="btn btn-primary btn-ptc btn-lg waves-effect waves-light">Learn more</a>
+                        </div>
+                        <!--/.Content-->
+
+                        <!--Form-->
+                        <div class="col-md-6 wow fadeInRight">
+                            <div class="card-panel">
+                                <!--Header-->
+                                <div class="modal-header text-center">
+                                    <h4><i class="fa fa-user"></i> Register:</h4>
+                                    <a class="btn-floating btn-large fb-bg waves-effect waves-light"><i class="fa fa-facebook"> </i></a>
+                                    <a class="btn-floating btn-large tw-bg waves-effect waves-light"><i class="fa fa-twitter"> </i></a>
+                                    <a class="btn-floating btn-large gplus-bg waves-effect waves-light"><i class="fa fa-google-plus"> </i></a>
+                                    <a class="btn-floating btn-large li-bg waves-effect waves-light"><i class="fa fa-linkedin"> </i></a>
+                                    <a class="btn-floating btn-large git-bg waves-effect waves-light"><i class="fa fa-github"> </i></a>
+                                </div>
+                                <!--/.Header-->
+
+                                <!--Body-->
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!--Form-->
+                                            <form>
+                                                <h4 class="text-center">or:</h4>
+
+                                                <div class="input-field">
+                                                    <i class="material-icons prefix">account_circle</i>
+                                                    <input id="icon_prefix" type="text" class="validate">
+                                                    <label for="icon_prefix">Your name</label>
+                                                </div>
+
+                                                <div class="input-field">
+                                                    <i class="material-icons prefix">email</i>
+                                                    <input id="icon_email" type="tel" class="validate">
+                                                    <label for="icon_email">Your email</label>
+                                                </div>
+
+                                                <div class="text-center">
+                                                    <button type="button" class="btn btn-primary btn-lg btn-ptc waves-effect waves-light">Sign up</button>
+                                                    <div class="subscription-checkbox">
+                                                        <form action="#">
+                                                            <input type="checkbox" id="test6" />
+                                                            <label for="test6">
+                                                                <p>Subscribe me to the Newsletter</p>
+                                                            </label>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                            <!--/.Form-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Body-->
+                            </div>
+                        </div>
+                        <!--/.Form-->
+
+                    </div>
+                </div>
+            </div>
+            <!--/.Alignment-->
+
+        </div>
+        <!--/.Mask-->
+
+    </section>
+    <!--/. Intro image -->
+    <!--/.Main container-->
+
+
+    <!--Section: Footer-->
+    <footer class="page-footer pt-color" id="sec-footer">
+        <!--Footer Content-->
+        <div class="container-fluid footer-content">
+            <div class="row text-center wow fadeIn">
+                <h4 class="white-text wow fadeIn">Find me on social media</h4>
+                <a href="https://www.facebook.com/mdbootstrap" class="btn-sm-full fb-bg rectangle waves-effect waves-light wow fadeInUp"><i class="fa fa-facebook"> </i> <span>Facebook</span> </a>
+                <a href="https://twitter.com/MDBootstrap" class="btn-sm-full tw-bg rectangle waves-effect waves-light wow fadeInUp" data-wow-delay="0.1s"><i class="fa fa-twitter"> </i> <span>Twitter</span></a>
+                <a href="https://plus.google.com/+Mdbootstrap" class="btn-sm-full gplus-bg rectangle waves-effect waves-light wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-google-plus"> </i> <span>Google +</span></a>
+                <a class="btn-sm-full li-bg rectangle waves-effect waves-light wow fadeInUp" data-wow-delay="0.3s"><i class="fa fa-linkedin"> </i> <span>LinkedIn</span></a>
+                <a class="btn-sm-full ins-bg rectangle waves-effect waves-light wow fadeInUp" data-wow-delay="0.4s"><i class="fa fa-instagram"> </i> <span>Instagram</span></a>
+                <a href="https://www.pinterest.com/mdbootstrap/" class="btn-sm-full pin-bg rectangle waves-effect waves-light wow fadeInUp" data-wow-delay="0.5s"><i class="fa fa-pinterest"> </i> <span>Pinterest</span></a>
+                <a class="btn-sm-full yt-bg rectangle waves-effect waves-light wow fadeInUp" data-wow-delay="0.6s"><i class="fa fa-youtube"> </i> <span>Youtube</span></a>
+                <a class="btn-sm-full git-bg rectangle waves-effect waves-light wow fadeInUp" data-wow-delay="0.7s"><i class="fa fa-github"> </i> <span>Github</span></a>
+            </div>
+        </div>
+        <!--/.Footer Content-->
+
+        <!--Coprytights-->
+        <div class="footer-copyright text-center rgba-black-light wow fadeIn">
+            <div class="container-fluid">
+                © 2016 Copyright: TuneFork
+            </div>
+        </div>
+        <!--/.Coprytights-->
+    </footer>
+    <!--/.Section: Footer-->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src= {% static 'js/jquery.min.js' %}></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src= {% static 'js/bootstrap.min.js' %}></script>
+
+    <!-- Material Design Bootstrap -->
+    <script type="text/javascript" src= {% static 'js/mdb.js' %}></script>
+
+    <!-- Smooth scroll -->
+    <script type="text/javascript" src={% static 'js/smooth-scroll.js' %}></script>
+
+    <!--WOW effect initialization-->
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
