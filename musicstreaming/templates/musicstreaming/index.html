@@ -1,4 +1,158 @@
 {% extends 'base.html' %}
 
 {% block index %}
+    <!-- Intro image -->
+    <section class="full-bg-img" id="sec-home">
+        <!--Mask-->
+        <div class="view rgba-black-strong">
+
+            <!--Alignment-->
+            <div class="verticalcenter">
+                <div class="container">
+                    <div class="row">
+
+                        <!--Content-->
+                        <div class="col-md-6 white-text wow fadeInLeft">
+                            <h2>TuneFork</h2>
+                            <p>TuneFork main information goes here.</p>
+                            <a href="#sec-best-features" class="btn btn-primary btn-ptc btn-lg waves-effect waves-light">Learn more</a>
+                        </div>
+                        <!--/.Content-->
+
+                        <!--Form-->
+                        <div class="col-md-6 wow fadeInRight">
+                            <div class="card-panel">
+                                <!--Header-->
+                                <div class="modal-header text-center">
+                                    <h4><i class="fa fa-user"></i> Login:</h4>
+                                </div>
+                                <!--/.Header-->
+
+                                <!--Body-->
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!--Form-->
+                                            <form>
+                                                <div class="input-field">
+                                                    <i class="material-icons prefix">account_circle</i>
+                                                    <input id="icon_prefix" type="text" class="validate">
+                                                    <label for="icon_prefix">Username</label>
+                                                </div>
+
+                                                <div class="input-field">
+                                                    <i class="material-icons prefix">vpn_key</i>
+                                                    <input id="icon_email" type="password" class="validate">
+                                                    <label for="icon_email">Password</label>
+                                                </div>
+
+                                                <div class="text-center">
+                                                    <button type="button" class="btn btn-primary btn-lg btn-ptc waves-effect waves-light">Sign up</button>
+                                                    <div class="subscription-checkbox">
+                                                        <form action="#">
+                                                            <label for="test6">
+                                                                <p>New to TuneFork? <a href="/">Create an account.</a></p>
+                                                            </label>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                            <!--/.Form-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Body-->
+                            </div>
+                        </div>
+                        <!--/.Form-->
+
+                    </div>
+                </div>
+            </div>
+            <!--/.Alignment-->
+
+        </div>
+        <!--/.Mask-->
+
+    </section>
+    <!--/. Intro image -->
+
+    <!--Main container-->
+    <div class="container">
+
+        <!--Section: Best Features-->
+        <section id="sec-best-features">
+            <div class="divider-new">Why TuneFork?</div>
+
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-md-3">
+                    <div class="elegant-card z-depth-1 hoverable wow slideInUp">
+                        <!-- Image wrapper -->
+                        <div class="view overlay hm-blue-slight">
+                            <img src="http://mdbootstrap.com/images/regular/work/img%20(2).jpg" class="img-responsive" alt="">
+                            <div class="mask waves-effect"></div>
+                        </div>
+                        <div class="card-content">
+                            <h5>Created with love</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto incidunt dolore assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-3">
+                    <div class="elegant-card z-depth-1 hoverable wow slideInUp" data-wow-delay="0.2s">
+                        <!-- Image wrapper -->
+                        <div class="view overlay hm-blue-slight">
+                            <img src="http://mdbootstrap.com/images/regular/work/img%20(8).jpg" class="img-responsive" alt="">
+                            <div class="mask waves-effect"></div>
+                        </div>
+                        <div class="card-content">
+                            <h5>Especially for you</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto incidunt dolore assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second column-->
+
+                <!--Third column-->
+                <div class="col-md-3">
+                    <div class="elegant-card z-depth-1 hoverable wow slideInUp" data-wow-delay="0.4s">
+                        <!-- Image wrapper -->
+                        <div class="view overlay hm-blue-slight">
+                            <img src="http://mdbootstrap.com/images/regular/work/img%20(10).jpg" class="img-responsive" alt="">
+                            <div class="mask waves-effect"></div>
+                        </div>
+                        <div class="card-content">
+                            <h5>Feel free</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto incidunt dolore assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Third column-->
+
+                <!--Fourth column-->
+                <div class="col-md-3">
+                    <div class="elegant-card z-depth-1 hoverable wow slideInUp" data-wow-delay="0.5s">
+                        <!-- Image wrapper -->
+                        <div class="view overlay hm-blue-slight">
+                            <img src="http://mdbootstrap.com/images/regular/work/img%20(13).jpg" class="img-responsive" alt="">
+                            <div class="mask waves-effect"></div>
+                        </div>
+                        <div class="card-content">
+                            <h5>Enjoy your life</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto incidunt dolore assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Fourth column-->
+            </div>
+        </section>
+        <!--/.Section: Best Features-->
+    </div>
+
 {% endblock %}
