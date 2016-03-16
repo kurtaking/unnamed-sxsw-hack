@@ -20,8 +20,9 @@
 
             <div class="row">
                <ul class="collection">
-                   {% for music in music_list %}
-                        <li>{{ music }}</li>
+                   {{ music_list.name }}
+                   {% for music in music_list.list %}
+                        <li><a href="/dashboard/{{ music_list.name }}/{{ music }}">{{ music }}</a></li>
                    {% endfor %}
                 </ul>
             </div>
