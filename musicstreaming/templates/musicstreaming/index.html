@@ -54,7 +54,7 @@
                                                     <div class="subscription-checkbox">
                                                         <form action="#">
                                                             <label for="test6">
-                                                                <p>New to TuneFork? <a href="/">Create an account.</a></p>
+                                                                <p>New to TuneFork? <a data-toggle="modal" data-target="#myModal-3">Create an account.</a></p>
                                                             </label>
                                                         </form>
                                                     </div>
@@ -95,12 +95,13 @@
                     <div class="elegant-card z-depth-1 hoverable wow slideInUp">
                         <!-- Image wrapper -->
                         <div class="view overlay hm-blue-slight">
-                            <img src="http://mdbootstrap.com/images/regular/work/img%20(2).jpg" class="img-responsive" alt="">
+                            <img src="/static/img/upload.jpeg" class="img-responsive" alt="">
                             <div class="mask waves-effect"></div>
                         </div>
                         <div class="card-content">
-                            <h5>Created with love</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto incidunt dolore assumenda.</p>
+                            <h5>Explore</h5>
+                            <p>Browse other user's current projects and tracklist</p>
+
                         </div>
                     </div>
                 </div>
@@ -111,12 +112,12 @@
                     <div class="elegant-card z-depth-1 hoverable wow slideInUp" data-wow-delay="0.2s">
                         <!-- Image wrapper -->
                         <div class="view overlay hm-blue-slight">
-                            <img src="http://mdbootstrap.com/images/regular/work/img%20(8).jpg" class="img-responsive" alt="">
+                            <img src="/static/img/explore.jpeg" class="img-responsive" alt="">
                             <div class="mask waves-effect"></div>
                         </div>
                         <div class="card-content">
-                            <h5>Especially for you</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto incidunt dolore assumenda.</p>
+                            <h5>Fork</h5>
+                            <p>Want to use someone else's track? Just fork it!</p>
                         </div>
                     </div>
                 </div>
@@ -127,12 +128,12 @@
                     <div class="elegant-card z-depth-1 hoverable wow slideInUp" data-wow-delay="0.4s">
                         <!-- Image wrapper -->
                         <div class="view overlay hm-blue-slight">
-                            <img src="http://mdbootstrap.com/images/regular/work/img%20(10).jpg" class="img-responsive" alt="">
+                            <img src="/static/img/fork.jpeg" class="img-responsive" alt="">
                             <div class="mask waves-effect"></div>
                         </div>
                         <div class="card-content">
-                            <h5>Feel free</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto incidunt dolore assumenda.</p>
+                            <h5>Create</h5>
+                            <p>Collaborate with other users to make final projects</p>
                         </div>
                     </div>
                 </div>
@@ -143,12 +144,13 @@
                     <div class="elegant-card z-depth-1 hoverable wow slideInUp" data-wow-delay="0.5s">
                         <!-- Image wrapper -->
                         <div class="view overlay hm-blue-slight">
-                            <img src="http://mdbootstrap.com/images/regular/work/img%20(13).jpg" class="img-responsive" alt="">
+                            <img src="/static/img/create.jpeg" class="img-responsive" alt="">
                             <div class="mask waves-effect"></div>
                         </div>
                         <div class="card-content">
-                            <h5>Enjoy your life</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id amet, quisquam modi nobis nostrum iusto incidunt dolore assumenda.</p>
+                            <h5>Upload</h5>
+
+                            <p>Upload any component of a track you'd like!</p>
                         </div>
                     </div>
                 </div>
@@ -156,6 +158,77 @@
             </div>
         </section>
         <!--/.Section: Best Features-->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal-3" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header text-center">
+                        <h4><i class="fa fa-user"></i> Register with:</h4>
+                        <a class="btn-floating btn-large fb-bg waves-effect waves-light"><i class="fa fa-facebook"> </i></a>
+                    </div>
+                    <!--/.Header-->
+
+                    <!--Body-->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!--Form-->
+                                <form>
+                                    <h4 class="text-center">or:</h4>
+
+                                    <div class="input-field">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="icon_email" type="text" class="validate">
+                                        <label for="icon_email">Username</label>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <i class="material-icons prefix">email</i>
+                                        <input id="icon_email" type="text" class="validate">
+                                        <label for="icon_email">E-mail</label>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <i class="material-icons prefix">lock</i>
+                                        <input id="password" type="password" class="validate">
+                                        <label for="password">Password</label>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <i class="material-icons prefix">lock</i>
+                                        <input id="password-rep" type="password" class="validate">
+                                        <label for="password-rep">Repeat password</label>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary btn-lg waves-effect waves-light">Sign up</button>
+                                    </div>
+
+                                </form>
+                                <!--/.Form-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Body-->
+
+                    <!--Footer-->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal">X</button>
+                        <div class="options">
+                            <p>Already have an account? <a type="submit" data-dismiss="modal">Login</a></p>
+                        </div>
+                    </div>
+                    <!--/.Footer-->
+                </div>
+            </div>
+        </div>
+        <!--/.Modal-->
+
     </div>
 
     {% include 'footer.html' %}
