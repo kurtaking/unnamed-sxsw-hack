@@ -12,3 +12,4 @@ pip-selfcheck.json
 venv
 .idea/*
 db.sqlite3
+*.pyc
