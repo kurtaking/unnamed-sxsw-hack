@@ -10,7 +10,7 @@ class User(models.Model):
     user_name = models.CharField(max_length=512)
 
     def __unicode__(self):
-        return self.user_id
+        return str(self.user_id)
 
 
 class Music(models.Model):
@@ -18,7 +18,7 @@ class Music(models.Model):
     users = models.ManyToManyField(User, through='Forkship')
 
     def __unicode__(self):
-        return self.pathname
+        return str(self.music_id)
 
 
 class Track(models.Model):
