@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block dashboard %}
+    {% include 'navbar2.html' %}
+    <!--Main container-->
+    <div class="container">
+        <!--Section: Best Features-->
+        <section id="sec-dashboard">
+            <div class="divider-new">[user] Dashboard</div>
+
+            <div class="row dashboard-header">
+                <div class="col-md-4">
+                    <h5 class="h5-responsive">Projects</h5>
+                </div>
+                <div class="col-md-4 col-md-offset-4 new-project">
+                    <i class="fa fa-code-fork"></i>
+                </div>
+            </div>
+
+            <div class="row">
+               <ul class="collection">
+                   {% for music in music_list %}
+                        <li>{{ music }}</li>
+                   {% endfor %}
+                </ul>
+            </div>
+
+        </section>
+        <!--/.Section: Best Features-->
+    </div>
+
+    {% include 'footer2.html' %}
+
+{% endblock %}
+
