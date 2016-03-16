@@ -5,3 +5,8 @@
 .new-project {
     text-align: right;
 }
+
+.btn-project {
+    background: transparent;
+    max-width: 100%;
+}
