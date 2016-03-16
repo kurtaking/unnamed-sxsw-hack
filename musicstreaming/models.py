@@ -14,19 +14,21 @@ class User(models.Model):
 
 
 class Music(models.Model):
-	music_id = models.AutoField(primary_key=True)
-	users = models.ManyToManyField(User, through='Forkship')
-	
-	def __unicode__(self):
-		return self.pathname
+    music_id = models.AutoField(primary_key=True)
+    users = models.ManyToManyField(User, through='Forkship')
+
+    def __unicode__(self):
+        return self.pathname
+
 
 class Track(models.Model):
-	track_id = models.AutoField(primary_key=True)
-	pathname = models.CharField(max_length=512)
-	music = models.ForeignKey(Music)
+    track_id = models.AutoField(primary_key=True)
+    pathname = models.CharField(max_length=512)
+    music = models.ForeignKey(Music)
 
-	def __unicode__(self):
-		return self.pathname
+    def __unicode__(self):
+        return self.pathname
+
 
 class Forkship(models.Model):
     user = models.ForeignKey(User)
