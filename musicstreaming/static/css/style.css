@@ -132,6 +132,10 @@ body {
   }
 }
 
+.navbar .navbar-nav > li > a {
+    color: #fff !important;
+  }
+
 .top-nav-collapse {
   background-color: #405C84;
 }
