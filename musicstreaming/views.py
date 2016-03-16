@@ -8,6 +8,10 @@ def index(request):
     return render(request, 'musicstreaming/index.html', {'worked': True})
 
 
+def user_feed(request):
+    return render(request, 'musicstreaming/user_feed.html', {})
+
+
 def dashboard(request):
     if request.method == 'GET':
         path_list = request.path.split('/')
