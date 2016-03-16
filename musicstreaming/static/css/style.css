@@ -1,0 +1,151 @@
+/*!
+ *
+ *
+ * Material Design for Bootstrap
+ * www.mdbootstrap.com
+ *
+ *
+ */
+/*********************
+  Mixins
+**********************/
+/*!
+ *
+ *
+ * Material Design for Bootstrap
+ * www.mdbootstrap.com
+ *
+ *
+ */
+/*********************
+  VARIABLES
+**********************/
+/*********************
+  GENERAL
+**********************/
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*********************
+  MAIN IMAGE
+**********************/
+.full-bg-img {
+  background: url("http://mdbootstrap.com/images/regular/city/img%20(23).jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: -50px;
+  height: 100%;
+  width: 100%;
+}
+
+.full-bg-img .container {
+  padding-top: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .full-bg-img, .view {
+    height: auto;
+    position: relative;
+    text-align: center;
+  }
+  .full-bg-img .verticalcenter, .view .verticalcenter {
+    top: none;
+    margin-top: 40px;
+    -webkit-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  .full-bg-img .container, .view .container {
+    padding-top: 30px;
+  }
+}
+
+/*********************
+  TEMPLATE COLORS
+**********************/
+.pt-color {
+  background-color: #405C84 !important;
+}
+
+.st-color {
+  background-color: #0E274D !important;
+}
+
+.et-color {
+  background-color: #2E2E2E !important;
+}
+
+.btn-ptc {
+  background-color: #405C84 !important;
+}
+
+.btn-ptc:hover {
+  background-color: #5174a6 !important;
+}
+
+.btn-ptc:focus {
+  background-color: #5174a6 !important;
+}
+
+.btn-stc {
+  background-color: #0E274D !important;
+}
+
+.btn-stc:hover {
+  background-color: #163d78 !important;
+}
+
+.btn-stc:focus {
+  background-color: #163d78 !important;
+}
+
+.btn-etc {
+  background-color: #2E2E2E !important;
+}
+
+.btn-etc:hover {
+  background-color: #484848 !important;
+}
+
+.btn-etc:focus {
+  background-color: #484848 !important;
+}
+
+/*********************
+  COMPONENTS
+**********************/
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #405C84 !important;
+  }
+  .navbar .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff !important;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #405C84;
+}
+
+.top-nav-collapse .nav li a {
+  color: #fff;
+}
+
+.top-nav-collapse .nav li a:hover, .top-nav-collapse .nav li a:focus {
+  color: #fff;
+  background-color: #0E274D;
+}
+
+.btn-floating,
+.carousel-indicators li {
+  background-color: #0E274D !important;
+}
