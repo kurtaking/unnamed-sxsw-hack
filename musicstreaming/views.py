@@ -7,5 +7,7 @@ def index(request):
 
 
 def dashboard(request):
-
+    if request.method == 'POST':
+        name = request.POST.get('username')
+        print name
     return render(request, 'musicstreaming/dashboard.html', {})
