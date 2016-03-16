@@ -22,15 +22,16 @@
 
   <!-- Template style -->
   <link href={% static 'css/style.css' %} rel="stylesheet">
+
+  <!-- Dashboard style -->
+  <link href={% static 'css/dashboard.css' %} rel="stylesheet">
 </head>
 
 <body>
-    {% include 'navbar.html' %}
-
-    {% block index %}{% endblock %}
+    {% block dashboard %} {% endblock %}
+    {% block index %} {% endblock %}
 
     {% include 'footer.html' %}
-
 
     <!-- SCRIPTS -->
 
