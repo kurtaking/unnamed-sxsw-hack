@@ -20,10 +20,9 @@
 
             <div class="row">
                <ul class="collection">
-                    <li class="collection-item">Project 1</li>
-                    <li class="collection-item">Project 2</li>
-                    <li class="collection-item">Project 3</li>
-                    <li class="collection-item">Project 4</li>
+                   {% for music in music_list %}
+                        <li>{{ music }}</li>
+                   {% endfor %}
                 </ul>
             </div>
 

@@ -13,7 +13,12 @@ def dashboard(request):
         name = request.POST.get('username')
         uid = User.objects.filter(user_name=name)
         music_list = Forkship.objects.filter(user=uid).values()
-        response = {'music_list': music_list}
+        resp_list = []
+        for music in music_list:
+            m = Music.objects.filter(music_id=music['music_id'])
+            print m[0].music_name
+            resp_list.append(m[0].music_name)
+        response = {'music_list': resp_list}
         print response
         return render(request, 'musicstreaming/dashboard.html', response)
     raise Http404("Kurt's a fuck up, sorry")
