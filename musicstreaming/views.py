@@ -1,6 +1,11 @@
-from django.http import Http404
+from django.http import Http404, HttpResponseRedirect
+from django.template import RequestContext
+from django.core.urlresolvers import reverse
+from django.shortcuts import render_to_response
+from .urls import url
 from django.shortcuts import render
-from .models import User, Music, Track, Forkship
+# from .forms import UploadFileForm
+from .models import User, Music, Track, Forkship, UploadFile
 import os
 
 
@@ -65,5 +70,9 @@ def dashboard(request):
 
 def upload(request):
     if request.method == 'POST':
-        print request.method
-        return
+        print request.FILES
+        # form = UploadFileForm(request.POST, request.FILES)
+        # new_file = UploadFile(file = request.FILES['file'])
+        # new_file.save()
+
+        return HttpResponseRedirect('dashboard')

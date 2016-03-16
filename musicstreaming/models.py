@@ -35,3 +35,7 @@ class Track(models.Model):
 class Forkship(models.Model):
     user = models.ForeignKey(User)
     music = models.ForeignKey(Music)
+
+
+class UploadFile(models.Model):
+    file = models.FileField(upload_to='files/%Y/%m/%d')
