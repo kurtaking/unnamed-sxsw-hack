@@ -2,6 +2,7 @@
 
 {% block dashboard %}
     {% include 'navbar2.html' %}
+
     <!--Main container-->
     <div class="container">
         <!--Section: Best Features-->
@@ -52,13 +53,27 @@
                         <div class="input-field col-md-4">
                           <label for="first_name">Upload Components</label>
                         </div>
-
-                        <div class="file-field input-field col-md-8">
-                          <button type="button" class="btn btn-project">
-                            <input type="file" />
+                       <div class="file-field input-field col-md-8">
+                          <button type="button" class="btn btn-project" >
+                            <input type="file" name="filename" id="fileInsert" value="" >
+                            
                           </button>
+                          <button type="button" class="btn btn-project" onclick="addToList()">Add Component</button>
+                        </div>
+                       <div class="row">
+                         <div class="col-md-2">
+                          <label for="first_name">Components:</label>
+                              <ul class="list-group" id="compList">
+                              </ul>
+                              </div> 
+                              <br>
+                          <div class="col-xs-12 col-sm-6 col-md-6">
+                            <!--<div class="col-xs-12 col-md-6"><input type="submit" name="submitHTML5" value="Lock" class="btn btn-danger btn-block btn-sm" onclick=""></div>-->
                         </div>
                       </div>
+
+ 
+                     </div>
                     </form>
               </div>
             </div>
@@ -75,6 +90,23 @@
 
 
     </div>
+
+    <script>
+    function addToList(){
+  
+      var e = document.getElementById("fileInsert");
+      var name = e.options[e.selectedIndex].text;
+
+      var x = document.getElementById("compList");
+      var node = document.createElement("li");                 // Create a <li> node
+      var textnode = document.createTextNode(name);         // Create a text node
+      node.appendChild(textnode);                              // Append the text to <li>
+      x.appendChild(node); 
+  
+  //$("#mylistgroup").append("<li class='list-group-item'>MY NEW ITEM</li>");
+}
+
+    </script>
 
     {% include 'footer2.html' %}
 

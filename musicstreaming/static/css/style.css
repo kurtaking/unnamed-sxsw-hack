@@ -149,3 +149,9 @@ body {
 .carousel-indicators li {
   background-color: #0E274D !important;
 }
+
+#card-panel{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
