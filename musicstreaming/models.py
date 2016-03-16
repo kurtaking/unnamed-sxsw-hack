@@ -24,6 +24,7 @@ class Music(models.Model):
 
 class Track(models.Model):
     track_id = models.AutoField(primary_key=True)
+    track_name = models.CharField(max_length=512, default='default')
     pathname = models.CharField(max_length=512)
     music = models.ForeignKey(Music)
 
