@@ -11,10 +11,10 @@
 
             <div class="row dashboard-header">
                 <div class="col-md-4">
-                    <h5 class="h5-responsive verticalcenter">Projects</h5>
+                    <h5 class="h5-responsive">Projects</h5>
                 </div>
                 <div class="col-md-4 col-md-offset-4 new-project">
-                    <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a> New Project
+                    <a class="btn-floating btn-small waves-effect waves-light red" data-toggle="modal" data-target="#newProject"><i class="material-icons">add</i></a>
                 </div>
             </div>
 
@@ -29,6 +29,52 @@
 
         </section>
         <!--/.Section: Best Features-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="newProject" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">New Project</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form class="col-md-12">
+                      <div class="row">
+                        <div class="input-field col-md-12">
+                          <input id="first_name" type="text" class="validate">
+                          <label for="project_name">Project Name</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col-md-4">
+                          <label for="first_name">Upload Components</label>
+                        </div>
+
+                        <div class="file-field input-field col-md-8">
+                          <button type="button" class="btn btn-project">
+                            <input type="file" />
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Create Project</button>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+
+
+
     </div>
 
 {% endblock %}
